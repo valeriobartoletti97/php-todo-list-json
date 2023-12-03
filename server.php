@@ -23,6 +23,16 @@ if(isset($_POST['deleteTask'])){
     file_put_contents('todo-list.json', json_encode($list));
 }
 
+if(isset($_POST['toggleTask'])){
+    $toggleTask = $_POST['toggleTask'];
+    if($list[$toggleTask]['done']){
+        $list[$toggleTask]['done'] = false;
+    }
+    else{
+        $list[$toggleTask]['done'] = true;
+    }
+    file_put_contents('todo-list.json', json_encode($list));
+}
 header('Content-Type: application/json');
 
 echo json_encode($list);

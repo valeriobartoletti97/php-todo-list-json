@@ -35,7 +35,7 @@
             <main>
                 <ul class="list-group mt-4">
                     <li v-for="(task,index) in todoList" :key="index" class="list-group-item list-group-item-action d-flex justify-content-between">
-                        <span class="fw-bold">{{task.text}}</span>
+                        <span class="fw-bold" @click="toggleTask(index)" :class="{done:task.done}">{{task.text}}</span>
                         <span class="align-middle">
                             <i class="fa-solid fa-trash" @click="deleteTask(index)"></i>
                         </span>

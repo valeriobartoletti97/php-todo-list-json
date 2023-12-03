@@ -31,6 +31,13 @@ createApp({
       axios.post(this.apiUrl, data).then((response)=>{
         this.todoList = response.data;
       })
+    },
+    toggleTask(index){
+      const data = new FormData();
+      data.append("toggleTask", index);
+      axios.post(this.apiUrl, data).then((response)=>{
+        this.todoList = response.data;
+      })
     }
   },
   mounted(){
