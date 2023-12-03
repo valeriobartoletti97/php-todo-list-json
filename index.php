@@ -28,14 +28,14 @@
             <header class="text-center mx-auto">
                 <h1 class="text-uppercase pt-2">Come diventare grossi</h1>
                 <div class="input-group mb-3 mx-auto pt-5">
-                    <input type="text" class="form-control" placeholder="Inserisci una nuova task">
+                    <input type="text" v-model="newTask" class="form-control" placeholder="Inserisci una nuova task" >
                     <button class="btn " type="button">New Task</button>
                 </div>
             </header>
             <main>
                 <ul class="list-group mt-4">
-                    <li class="list-group-item list-group-item-action d-flex justify-content-between">
-                        <span class="fw-bold"></span>
+                    <li v-for="(task,index) in todoList" :key="index" class="list-group-item list-group-item-action d-flex justify-content-between">
+                        <span class="fw-bold">{{task.text}}</span>
                         <span class="align-middle">
                             <i class="fa-solid fa-trash"></i>
                         </span>
