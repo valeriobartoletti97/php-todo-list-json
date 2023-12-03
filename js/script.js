@@ -15,6 +15,16 @@ createApp({
         this.todoList = response.data
       }) 
     },
+    addNewTask(){
+      if(this.newTask != ''){
+        const data = new FormData();
+        data.append("newTask", this.newTask); 
+        axios.post(this.apiUrl, data).then((response)=>{
+          this.todoList = response.data;
+          this.newTask= '';
+        })
+      }
+    }
   },
   mounted(){
     this.getTask()
