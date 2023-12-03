@@ -1,0 +1,26 @@
+[
+    {
+        "text": "Shoulder Press",
+        "done": false
+    },
+    {
+        "text": "Squat",
+        "done": false
+    },
+    {
+        "text": "Arnold Press",
+        "done": false
+    },
+    {
+        "text": "Deltoide Posteriore",
+        "done": false
+    },
+    {
+        "text": "Frog Jump",
+        "done": true
+    },
+    {
+        "text": "Pettorali con manubri",
+        "done": false
+    }
+]

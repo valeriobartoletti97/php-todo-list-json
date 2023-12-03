@@ -22,11 +22,32 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <div id="app">
-            
+
+    <div id="app" class="pt-3 p-relative">
+        <div class="container">
+            <header class="text-center mx-auto">
+                <h1 class="text-uppercase pt-2">Come diventare grossi</h1>
+                <div class="input-group mb-3 mx-auto pt-5">
+                    <input type="text" class="form-control" placeholder="Inserisci una nuova task">
+                    <button class="btn " type="button">New Task</button>
+                </div>
+            </header>
+            <main>
+                <ul class="list-group mt-4">
+                    <li class="list-group-item list-group-item-action d-flex justify-content-between">
+                        <span class="fw-bold"></span>
+                        <span class="align-middle">
+                            <i class="fa-solid fa-trash"></i>
+                        </span>
+                    </li>
+                </ul>
+                <audio class="d-block mx-auto mt-5" controls autoplay muted>
+                    <source src="audio/file.mp3" type="audio/mpeg">
+                </audio>
+            </main>
         </div>
     </div>
+
 </body>
 
 </html>
